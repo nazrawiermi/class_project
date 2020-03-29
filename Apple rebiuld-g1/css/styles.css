@@ -29,6 +29,25 @@ img {
 	}
 	.footer-links-wrapper h3 {
 		padding: 10px 0;
+		font-size: 18px;
+		border-bottom: 1px solid #ccc;
+	}
+	.footer-links-wrapper h3:after {
+		font-family: "FontAwesome";
+		content: "\f067";
+		padding-left: 10px;
+		position: absolute;
+		right: 25px;
+	}
+}
+
+@media (max-width: 540px){
+	.footer-links-wrapper ul {
+		display: none;
+	}
+	.footer-links-wrapper h3 {
+		padding: 10px 0;
+		font-size: 10px;
 		border-bottom: 1px solid #ccc;
 	}
 	.footer-links-wrapper h3:after {
@@ -73,15 +92,14 @@ img {
 .footer-wrapper ul {
 	list-style: none;
 	padding-bottom: 10px;
-	padding-left: 0px;
-	
+	padding-inline-start: 0px;
 }
 .footer-wrapper ul a {
 	color: #515154;
 }
 .my-apple-wrapper {
 	padding-bottom: 15px;
-  	margin-top: 10px;
+  margin-top: 10px;
 }
 .copyright {
 	margin-top: 15px;
@@ -100,24 +118,23 @@ img {
 }
 .footer-links-terms ul {
 	display: flex;
-	margin: 5px 7px 0;
-	padding: 0px 10px;  
-	justify-content:center;
-
+	align-items: center;
 }
 .footer-links-terms ul li {
-	padding: 0 10px;
+	padding: 0 10px 0 10px;
+	margin: 5px 10px 0 0px;
 	border-right: 1px solid #d2d2d7;
+	white-space: normal;
 }
 .footer-links-terms ul li:first-child {
 	padding-left: 0;
 	padding-right: 10px;
 }
 
-
 .footer-links-terms ul li:last-child {
 	border-right: 0;
-	padding-left: 10px;
+	padding-right: 10px;
+	/*padding-left: 10px;*/
 }
 
 .footer-links-wrapper h3 {
